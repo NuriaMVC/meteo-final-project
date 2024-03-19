@@ -69,7 +69,7 @@ console.log(response.data);
         forecastHtml + 
         `
         <div class = "row">
-        <div class = "col-2">
+        <div class = "col-2"
                     <div class = "weather-forecast-date">${formatDay(day.time)}</div>
                     <img src = "${day.condition.icon_url}" class = "weather-forecast-icon" 
                     />
@@ -77,8 +77,8 @@ console.log(response.data);
                         <span class = "weather-forecast-temperatures-max">${Math.round(day.temperature.maximum)}°</span>
                         <span class = "weather-forecast-temperatures-min">${Math.round(day.temperature.minimum)}°</span>
                     </div>
-                </div>
-        </div>
+                    </div>
+                    </div>
                 `;
                 }
     }); 
